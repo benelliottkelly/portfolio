@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <Nav />
+      <main>
       <Element id='hero'>
         <Hero />
       </Element>
@@ -27,6 +28,7 @@ function App() {
         <Contact />
       </Element>
       <Footer />
+      </main>
     </>
   )
 }

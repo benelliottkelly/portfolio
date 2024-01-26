@@ -1,0 +1,13 @@
+@import '../global/variables.scss';
+
+header {
+  position: fixed;
+  width: 100%;
+  height: var(--nav-height);
+  @include flex-space(row);
+  background-color: black;
+  .scroll-link {
+    font-size: 2em;
+    
+  }
+}
