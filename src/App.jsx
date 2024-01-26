@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Element } from 'react-scroll'
 import './App.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -13,10 +14,18 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Contact />
+      <Element id='hero'>
+        <Hero />
+      </Element>
+      <Element id='about-me'>
+        <AboutMe />
+      </Element>
+      <Element id='projects'>
+        <Projects />
+      </Element>
+      <Element id='contact'>
+        <Contact />
+      </Element>
       <Footer />
     </>
   )
