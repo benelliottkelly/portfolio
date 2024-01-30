@@ -1,5 +1,4 @@
 import { Link, Element, animateScroll as scroll } from 'react-scroll'
-import Contact from './Contact'
 
 export default function Nav() {
   return (

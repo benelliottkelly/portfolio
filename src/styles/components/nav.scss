@@ -5,9 +5,10 @@ header {
   width: 100%;
   height: var(--nav-height);
   @include flex-space(row);
-  background-color: black;
+  background-color: var(--primary-colour);
   .scroll-link {
+    text-decoration: none;
+    color: black;
     font-size: 2em;
-    
   }
 }

@@ -53,7 +53,7 @@ export default function Projects(){
   listOfProjects.push(pacman)
 
   return(
-    <section className="projects">
+    <section className="screen" id='projects'>
       <h2>Projects</h2>
       <section className="projects-container">
         {listOfProjects.map((project) => {

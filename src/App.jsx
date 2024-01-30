@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Element } from 'react-scroll'
 import './App.css'
 import Nav from './components/Nav'
@@ -9,13 +9,16 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+  
+  const heroRef = useRef()
 
+  console.log(heroRef.current)
 
   return (
     <>
       <Nav />
       <main>
-      <Element id='hero'>
+      <Element id='hero' ref={heroRef}>
         <Hero />
       </Element>
       <Element id='about-me'>

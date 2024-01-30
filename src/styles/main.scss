@@ -1,8 +1,10 @@
 @import './global/variables.scss';
 @import './components/nav.scss';
+@import './components/hero.scss';
 
 * {
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -18,4 +20,8 @@ body {
 
 main {
   margin-top: var(--nav-height);
+}
+
+.screen {
+  min-height: calc(100vh - var(--nav-height))
 }

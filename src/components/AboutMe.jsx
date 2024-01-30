@@ -2,7 +2,7 @@ import profileImg from '../assets/images/BenProfile.jpg'
 
 export default function AboutMe() {
   return(
-    <section className="about-me">
+    <section className="screen" id='about-me'>
       <h2>About Me</h2>
       <div className="about-me-contents">
         <div>
