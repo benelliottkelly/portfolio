@@ -1,11 +1,35 @@
+import { useState } from 'react'
 import profileImg from '../assets/images/BenProfile.jpg'
 
 export default function AboutMe() {
+
+  // const [ onScreen, setOnScreen ] = useState(false)
+
+  // function isInViewPort() {
+  //   const aboutMeScreen = document.querySelector('section#about-me')
+  //   const rect = aboutMeScreen.getBoundingClientRect()
+  //   // console.log(rect)
+  //   console.log('innerwidth', window.innerWidth)
+  //   console.log('innerheight', window.innerHeight)
+  //   if (
+  //     parseInt(rect.top) >= 0 &&
+  //     // parseInt(rect.left) >= 0 &&
+  //     parseInt(rect.bottom) <= (parseInt(window.innerHeight) || parseInt(document.documentElement.clientHeight)) // &&
+  //     // parseInt(rect.right) <= (parseInt(window.innerWidth) || parseInt(document.documentElement.clientWidth))
+  //   ) {
+  //     setOnScreen(true)
+  //   } else {
+  //     setOnScreen(false)
+  //   }
+  // }
+
+  // document.addEventListener('scroll', isInViewPort)
+
   return(
     <section className="screen" id='about-me'>
       <h2>About Me</h2>
       <div className="about-me-contents">
-        <div>
+        <div className='playful'>
           <img src={profileImg} />
           <div className='spotify-container'>
             <h3>Listen along with my coding playlist...</h3>

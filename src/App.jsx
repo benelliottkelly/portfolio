@@ -10,24 +10,24 @@ import Footer from './components/Footer'
 
 function App() {
   
-  const heroRef = useRef()
-
-  console.log(heroRef.current)
+  function scrollEvent(e) {
+    console.log(e)
+  }
 
   return (
     <>
       <Nav />
       <main>
-      <Element id='hero' ref={heroRef}>
+      <Element className='pseudo-page' id='hero'>
         <Hero />
       </Element>
-      <Element id='about-me'>
+      <Element className='pseudo-page' id='about-me'>
         <AboutMe />
       </Element>
-      <Element id='projects'>
+      <Element className='pseudo-page' id='projects'>
         <Projects />
       </Element>
-      <Element id='contact'>
+      <Element className='pseudo-page' id='contact'>
         <Contact />
       </Element>
       <Footer />

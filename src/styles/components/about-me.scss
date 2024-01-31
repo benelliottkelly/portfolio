@@ -1,0 +1,27 @@
+@import '../global/variables.scss';
+
+#about-me {
+  .about-me-contents {
+    @include flex-even(row);
+    width: 100%;
+  }
+  .playful {
+    @include flex-center(column);
+    img {
+      width: 300px;
+    }
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .playful { animation: none !important; }
+}

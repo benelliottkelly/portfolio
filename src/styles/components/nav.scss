@@ -8,7 +8,16 @@ header {
   background-color: var(--primary-colour);
   .scroll-link {
     text-decoration: none;
-    color: black;
-    font-size: 2em;
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 900;
+    padding: 1em;
   }
+  .scroll-link:hover {
+    color: var(--active-colour);
+    cursor: pointer;
+  }
+  .active {
+    color: var(--active-colour);
+}
 }
