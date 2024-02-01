@@ -6,6 +6,7 @@ header {
   height: var(--nav-height);
   @include flex-space(row);
   background-color: var(--primary-colour);
+  z-index: 5;
   .scroll-link {
     text-decoration: none;
     color: #ffffff;
