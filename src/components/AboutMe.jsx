@@ -46,7 +46,7 @@ export default function AboutMe() {
   }, [aboutMeInView])
 
   return(
-    <section className="screen" id='about-me-container'>
+    <section className="screen" id='about-me-screen'>
       <h2>About Me</h2>
       <div ref={aboutMeRef} className={`about-me-contents ${onScreen ? 'animate-about-me' : ''}`}>
         <div className='playful'>
@@ -64,7 +64,8 @@ export default function AboutMe() {
             <p>As a former senior environmental consultant, I discovered my passion for software development while observing my partner code. This led to me pursuing a software engineering bootcamp at General Assembly, determined to learn the skills!</p>
             <p>A board games enthusiast, I find joy in problem-solving, strategy and social interaction, drawing parallels between interpreting complex game rules and coding concepts. A natural team player and mentor in previous roles, I'm eager to develop my skills further, embrace new challenges, and contribute positively to a collaborative team environment.</p>
           </div>
-          <article>
+          <article className='skills-container'>
+            <h3 id='skills-header'>Skills</h3>
             <ul>
               <li className='single-skill' style={{ backgroundImage: `url(${htmlLogo})`, '--i': 1 }}><p className='skill-text'>HTML</p></li>
               <li className='single-skill' style={{ backgroundImage: `url(${cssLogo})`, '--i': 2 }}><p className='skill-text'>CSS</p></li>

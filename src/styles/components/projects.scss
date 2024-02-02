@@ -1,0 +1,101 @@
+@import '../global/variables.scss';
+
+:root {
+  --border-width: 1.5em;
+}
+
+#projects-screen {
+  .projects-container {
+    @include flex-even(row);
+    flex-wrap: wrap;
+  }
+  .individual-project-container {
+    opacity: 0%;
+    @include flex-center(column);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(#8CABCC, 1), 
+      2px 2px 17px rgba(#8CABCC, .35), 
+      2px 2px 25px rgba(#8CABCC, .5);
+    width: 45%;
+    padding: 1em;
+    margin: 1em;
+    .project-links {
+      @include flex-space(row);
+      padding-top: 1rem;
+    }
+    a {
+      padding: 1rem;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+    h3 {
+      margin: 0;
+      font-weight: 900;
+      text-align: center;
+      padding: 1em 0 0.5em;
+    }
+    .project-image {
+      width: 80%;
+      display: grid;
+      place-content: center;
+      position: relative;
+      box-shadow: 2px 2px 5px rgba(#000, .2), 
+                  2px 2px 17px rgba(#000, .35), 
+                  2px 2px 25px rgba(#000, .5);
+    }
+    p {
+      padding: 0em 1em 1em;
+      margin: 0;
+    }
+    h4 {
+      font-weight: 900;
+      margin: 0;
+    }
+    ul {
+      @include flex-even(row);
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        font-size: 1.3em;
+        padding: 1em;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+#projects-screen {
+  .animate-projects {
+    .individual-project-container {
+      animation: fade-in 1s linear forwards, lift-up 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    }
+  }
+}
+
+@keyframes lift-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #projects-screen { 
+    animation: none !important; 
+    .individual-project-container {
+      opacity: 100%;
+    }
+  }
+}

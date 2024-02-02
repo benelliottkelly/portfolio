@@ -2,6 +2,9 @@
 @import './components/nav.scss';
 @import './components/hero.scss';
 @import './components/about-me.scss';
+@import './components/projects.scss';
+@import './components/contact.scss';
+@import './components/footer.scss';
 
 * {
   box-sizing: border-box;
@@ -32,6 +35,9 @@ main {
     font-weight: 900;
     margin: 1.5em 0 0 0 !important;
     padding: 1em;
+  }
+  p {
+    font-size: 1.5em;
   }
   a {
     text-decoration: none;

@@ -1,0 +1,12 @@
+@import '../global/variables.scss';
+
+footer {
+  height: 5vh;
+  background-color: var(--secondary-colour);
+  @include flex-center(row);
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
