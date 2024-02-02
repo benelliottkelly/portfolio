@@ -33,4 +33,17 @@ main {
     margin: 1.5em 0 0 0 !important;
     padding: 1em;
   }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #636363;
+  }
+}
+
+.bold {
+  font-weight: 600;
 }

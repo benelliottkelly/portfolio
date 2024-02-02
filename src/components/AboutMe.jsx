@@ -32,14 +32,23 @@ import reactLogo from '../assets/images/Logos/react.png'
 import sassLogo from '../assets/images/Logos/sass.png'
 import viteLogo from '../assets/images/Logos/vite.png'
 
+import { FaInstagramSquare } from "react-icons/fa";
+
 export default function AboutMe() {
 
+  const [ onScreen, setOnScreen ] = useState(false)
   const { ref: aboutMeRef, inView: aboutMeInView } = useInView()
+
+  useEffect(()=> {
+    if (aboutMeInView) {
+      setOnScreen(true)
+    }
+  }, [aboutMeInView])
 
   return(
     <section className="screen" id='about-me-container'>
       <h2>About Me</h2>
-      <div ref={aboutMeRef} className={`about-me-contents ${aboutMeInView ? 'animate-about-me' : ''}`}>
+      <div ref={aboutMeRef} className={`about-me-contents ${onScreen ? 'animate-about-me' : ''}`}>
         <div className='playful'>
           <div className='image-wrap'>
             <img src={profileImg}/>
@@ -50,8 +59,11 @@ export default function AboutMe() {
           </div>
         </div>
         <div className='statement-skills'>
-          <p>As a former senior environmental consultant, I discovered my passion for software development while observing my partner code. This led to me pursuing a software engineering bootcamp at General Assembly, determined to learn the skills!</p>
-          <p>A board games enthusiast, I find joy in problem-solving, strategy and social interaction, drawing parallels between interpreting complex game rules and coding concepts. A natural team player and mentor in previous roles, I'm eager to develop my skills further, embrace new challenges, and contribute positively to a collaborative team environment.</p>
+          <div className='brand-statement'>
+            <h3>Brand Statement</h3>
+            <p>As a former senior environmental consultant, I discovered my passion for software development while observing my partner code. This led to me pursuing a software engineering bootcamp at General Assembly, determined to learn the skills!</p>
+            <p>A board games enthusiast, I find joy in problem-solving, strategy and social interaction, drawing parallels between interpreting complex game rules and coding concepts. A natural team player and mentor in previous roles, I'm eager to develop my skills further, embrace new challenges, and contribute positively to a collaborative team environment.</p>
+          </div>
           <article>
             <ul>
               <li className='single-skill' style={{ backgroundImage: `url(${htmlLogo})`, '--i': 1 }}><p className='skill-text'>HTML</p></li>
@@ -86,7 +98,18 @@ export default function AboutMe() {
               <li className='single-skill' style={{ backgroundImage: `url(${qgisLogo})`, '--i': 30 }}><p className='skill-text'>QGIS</p></li>
             </ul>
           </article>
-          <p>Personal hobbies etc</p>
+          <div className='hobbies-container'>
+            <h3>Hobbies</h3>
+            <p>I really enjoy playing <span className='bold'>board games</span> and TTRPGs which involve creativity, improvisation and team communication. This has also evolved to include <span className='bold'>miniature painting</span> which has taught me the value of a planned patient approach when taking on a project as well as providing an excellent creative outlet.</p>
+            <p>You can find pictures of my miniatures here: <a href='https://www.instagram.com/wee_gerblins?igsh=bDU1Mm93ZWxtb3Nh' target='_blank'><FaInstagramSquare /> wee_gerblins</a></p>
+            <p>I love <span className='bold'>video games</span>, both on console and PC. I tend to lean towards RPGs or strategy games because I either love immersing myself in a story or getting that rewarding feeling of pulling off a complex game plan.</p>
+            <p>I am a big outdoors person and have a passion for <span className='bold'>wildlife photography</span> and <span className='bold'>hiking</span>. One of my most recent expedition involved crawling through 1-2 feet of snow in the Scottish mountains to photograph mountain hare.</p>
+            <p>You can find some of my wildlife photography here: <a href='https://www.instagram.com/bkellywildlife?igsh=cWZrYjBhMXg5Y2pm' target='_blank'><FaInstagramSquare /> bkellywildlife </a></p>
+            <p>I am a big <span className='bold'>coffee</span> drinker, I bought a proper coffee machine during the 2020 lockdown and it was one of the best purchases I've made to this day!</p>
+            <p>I also dabble in playing <span className='bold'>guitar</span> and am a huge <span className='bold'>metal music</span> enthusiast.</p>
+            <p>As a stats nerd I love playing <span className='bold'>fantasy NFL</span> but please don't ask me about my teams unless you want to be bored to death.</p>
+            <p>My other hobbies include <span className='bold'>individual and team sports</span> such as snowboarding, kayaking and rugby all of which have taught me the importance of teamwork, overcoming obstacles and challenges, and the perseverance required to reach a competent skill level in each activity.</p>
+          </div>
         </div>
       </div>
     </section>
