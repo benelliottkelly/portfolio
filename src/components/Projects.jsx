@@ -79,7 +79,7 @@ export default function Projects() {
       <h2>Projects</h2>
       <section ref={ProjectsRef} className={`projects-container ${onScreen ? 'animate-projects' : ''}`}>
         {listOfProjects.map((project) => {
-          return <div className="individual-project-container" key={uuidv4()}>
+          return <div className={`individual-project-container ${onScreen ? 'animate-container' : ''}`} key={uuidv4()}>
               <h3>{project.name}</h3>
               <img className='project-image' src={project.picture} />
               <div className='project-links'>

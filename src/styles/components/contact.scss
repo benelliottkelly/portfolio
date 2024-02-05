@@ -1,5 +1,9 @@
 @import '../global/variables.scss';
 
+
+#contact-screen {
+  min-height: calc(95vh - var(--nav-height));
+}
 .contact-details {
   opacity: 0%;
   min-height: 40vh;
@@ -20,15 +24,15 @@
 
 
 .animate-contact {
-  animation: fade-in 1s linear forwards; 
+  animation: fade-in 1s 0.5s linear forwards; 
   #email-link {
-    animation: link-right 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: link-right 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
   }
   #linkedin-link {
-    animation: link-left 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: link-left 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
   }
   #github-link {
-    animation: link-right 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: link-right 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
   }
 }
 

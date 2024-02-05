@@ -8,12 +8,15 @@
 
 #about-me-screen {
   .about-me-contents {
+    @include flex-even(column);
+    width: 100%;
+  }
+  .about-me-top {
     @include flex-even(row);
     width: 100%;
   }
   .playful {
     display: none;
-    // @include flex-center(column);
     .image-wrap {
       position: relative;
       padding: 30px;
@@ -54,6 +57,12 @@
   }
   .statement-skills {
     max-width: 50vw;
+  }
+  .hobbies-container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .statement-skills, .hobbies-container {
     h3 {
       margin: 0;
       font-weight: 600;
@@ -61,7 +70,6 @@
       padding: 1em 0 0.5em;
     }
     ul {
-      shape-outside: polygon(30% 0%, 70% 0%, 100% 35%, 85% 100%, 15% 100%, 0 35%);
       @include flex-center(row);
       flex-wrap: wrap;
       padding: 2em;
@@ -117,7 +125,7 @@
       }
     }
     .statement-skills {
-      .brand-statement, .hobbies-container , #skills-header {
+      .brand-statement, #skills-header {
         animation: fade-in 1s linear forwards, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both, inner-right 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
       }
       ul {
@@ -126,6 +134,9 @@
           animation-delay: calc(.1s * var(--i));
         }
       }
+    }
+    .animate-hobbies-container {
+      animation: fade-in 2s linear forwards, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both, lift-up 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
     }
   }
 }
@@ -184,6 +195,15 @@
   }
   100% {
     opacity: 100%;
+  }
+}
+
+@keyframes lift-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: none;
   }
 }
 

@@ -66,9 +66,9 @@
 }
 
 #projects-screen {
-  .animate-projects {
-    .individual-project-container {
-      animation: fade-in 1s linear forwards, lift-up 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  .projects-container {
+    .animate-container {
+      animation: fade-in 1s linear forwards, lift-up 1s 0s cubic-bezier(0.5, 0, 0.1, 1) forwards;
     }
   }
 }
