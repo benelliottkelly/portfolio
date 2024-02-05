@@ -7,6 +7,16 @@ header {
   @include flex-space(row);
   background-color: var(--primary-colour);
   z-index: 5;
+  #home-icon {
+    display: none;
+    padding: 10px;
+    img {
+      width: 70px;
+    }
+  }
+  #home-icon:hover {
+    cursor: pointer;
+  }
   .scroll-link {
     text-decoration: none;
     color: #ffffff;
@@ -21,4 +31,118 @@ header {
   .active {
     color: var(--active-colour);
 }
+}
+
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--active-colour);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #ffffff !important;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 36px !important;
+  top: 36px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--secondary-colour);
+  height: 2rem !important;
+  width: 0.5rem !important;
+}
+
+/*
+Sidebar wrapper styles
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--active-colour);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--active-colour);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-link {
+  font-size: 2rem;
+  padding: 2rem 0px 0px 0px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: var(--secondary-colour);
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.menu-link:hover {
+  color: #ffffff;
+}
+
+// * Medium devices (tablets, 768px and under)
+@media (max-width: 768px) { 
+  header {
+    height: var(--small-nav-height);
+    #nav-right {
+      display: none;
+    }
+    #home-link {
+      display: none;
+    }
+    #home-icon {
+      display: block;
+    }
+  }
+
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+// * Large devices (desktops, 992px and under)
+@media (max-width: 992px) {
+  header {
+    .scroll-link {
+      font-size: 1.75rem;
+    }
+  }
 }

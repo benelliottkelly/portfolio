@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="i-am">
           <h1>I am</h1>
           <div id="title-name"> <h1>Ben <span>Kelly</span></h1></div>
-          <section class="description-scroll">
+          <section className="description-scroll">
             <div id="first"><div>Junior Software Engineer</div></div>
             <div id="second"><div>Tech Nerd</div></div>
             <div id="third"><div>Photographer</div></div>

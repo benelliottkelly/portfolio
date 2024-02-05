@@ -13,7 +13,8 @@
 
 body {
   margin: 0;
-  min-width: 100vw;
+  min-width: 375px;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -33,7 +34,7 @@ main {
   h2 {
     font-size: 3.5em;
     font-weight: 900;
-    margin: 1.5em 0 0 0 !important;
+    margin: 1.5rem 0 0 0 !important;
     padding: 1em;
   }
   p {
@@ -53,3 +54,52 @@ main {
 .bold {
   font-weight: 600;
 }
+
+
+// * Extra small devices (Smartphones)
+// @media (max-width: 375px) {
+
+// }
+
+// * Small devices (landscape phones, 576px and under)
+// @media (max-width: 576px) {
+
+// }
+
+// * Medium devices (tablets, 768px and under)
+@media (max-width: 768px) { 
+  main {
+    margin-top: var(--small-nav-height);
+  }
+  .pseudo-page {
+    margin-bottom: calc(var(--small-nav-height) / 2);
+  }
+  #contact {
+    height: 80vh;
+    margin-bottom: 0px;
+  }
+  .screen {
+    min-height: calc(100vh - var(--small-nav-height));
+    h2 {
+      font-size: 3.5em;
+      font-weight: 900;
+      margin: 0px 0px 1rem 0px !important;
+      padding: 0px;
+    }
+  }
+}
+
+// * Large devices (desktops, 992px and under)
+// @media (max-width: 992px) {
+
+// }
+
+// * X-Large devices (large desktops, 1200px and under)
+// @media (max-width: 1200px) { 
+
+//  }
+
+// * XX-Large devices (larger desktops, 1400px and under)
+// @media (max-width: 1400px) {
+
+// }

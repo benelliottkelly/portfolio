@@ -57,3 +57,17 @@
   89% {margin-top: calc(var(--scroller-height) * -5);}
   100% {margin-top: 0;}
 }
+
+// * Extra small devices (Smartphones)
+@media (max-width: 375px) {
+  .i-am {
+    font-size: 0.5rem;
+  }
+}
+
+// * Medium devices (tablets, 768px and under)
+@media (max-width: 768px) { 
+  .i-am {
+    font-size: 0.5rem;
+  }
+}
