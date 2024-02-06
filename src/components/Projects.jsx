@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 import boardGameImg from '../assets/images/BoardGameLibrary.gif'
 import pacManImg from '../assets/images/DnDPacMan.gif'

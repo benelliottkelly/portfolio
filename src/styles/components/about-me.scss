@@ -8,7 +8,7 @@
 
 #about-me-screen {
   .about-me-contents {
-    @include flex-even(column);
+    @include flex-center(column);
     width: 100%;
   }
   .about-me-top {
@@ -60,6 +60,7 @@
     max-width: 50vw;
   }
   .hobbies-container {
+    max-width: 1600px;
     width: 100%;
     padding: 2rem;
   }
@@ -71,6 +72,7 @@
       padding: 1em 0 0.5em;
     }
     ul {
+      max-width: 1200px;
       @include flex-center(row);
       flex-wrap: wrap;
       padding: 2em;
@@ -109,8 +111,12 @@
       opacity: 0%;
       padding: 3rem;
     }
+    .brand-statement {
+      max-width: 800px;
+    }
   }
   .skills-container {
+    @include flex-center(column);
     h3 {
       padding-top: 0px;
     }
@@ -284,6 +290,9 @@
             height: 75px;
           }
         }
+      }
+      img {
+        width: 250px;
       }
     }
   }
