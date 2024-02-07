@@ -108,11 +108,22 @@
       opacity: 0%;
     }
     .brand-statement, .hobbies-container {
+      @include flex-center(column);
       opacity: 0%;
       padding: 3rem;
     }
     .brand-statement {
       max-width: 800px;
+    }
+    .minis-pictures, .photography-pictures {
+      @include flex-space(row);
+      width: 100%;
+      padding: 1rem;
+      .hobby-picture {
+        width: 30%;
+        border: 5px solid #000;
+        border-radius: 20px;
+      }
     }
   }
   .skills-container {

@@ -38,7 +38,7 @@ export default function Projects() {
     'https://board-games-library-babd93547dd0.herokuapp.com/',
     'https://github.com/benelliottkelly/Board_Games/blob/main/README.md',
     boardGameImg,
-    'This was the final project of my software engineering immersive bootcamp with General Assembly. The project is a full stack application where users can create profiles and add/edit or delete board games from a library. The users can also add these existing games to a list of their own personally owned games',
+    'This was the final project of my software engineering immersive bootcamp with General Assembly. The project is a full stack application where users can create profiles and add/edit or delete board games from a library. The users can also add these existing games to a list of their own personally owned games.',
     ['Python', 'Django', 'React', 'JavaScript', 'Bootstrap']
   )
   listOfProjects.push(boardGames)
@@ -58,7 +58,7 @@ export default function Projects() {
     'https://heroesandvillainsapi.netlify.app/',
     'https://github.com/benelliottkelly/Super-Heroes-Search/blob/main/README.md',
     heroesImg,
-    'This was a pair project for General Assembly where my partner and I took an extrated and displayed information from an external API. We chose a heroes and villains API and created an index page to look like a comic book and single detailed pages to look like top trump cards',
+    'This was a pair project for General Assembly where my partner and I took an extrated and displayed information from an external API. We chose a heroes and villains API and created an index page to look like a comic book and single detailed pages to look like top trump cards.',
     ['HTML', 'SCSS', 'JavaScript', 'React']
   )
   listOfProjects.push(heroesAndVillains)
@@ -68,7 +68,7 @@ export default function Projects() {
     'https://benelliottkelly.github.io/DnD-themed-PacMan/',
     'https://github.com/benelliottkelly/DnD-themed-PacMan/blob/main/README.md',
     pacManImg,
-    'This was my first project during my time learning at General Assembly and was undertaken after only 3 weeks of learning to code. The project brief was to create a grid based game. I chose to make a D&D themed Pac-man',
+    'This was my first project during my time learning at General Assembly and was undertaken after only 3 weeks of learning to code. The project brief was to create a grid based game. I chose to make a D&D themed Pac-man.',
     ['HTML', 'CSS', 'JavaScript']
   )
   listOfProjects.push(pacman)
