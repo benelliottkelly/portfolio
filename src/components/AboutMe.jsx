@@ -76,7 +76,7 @@ export default function AboutMe() {
         <div className='about-me-top'>
           <div className='playful'>
             <div className='image-wrap'>
-              <img src={profileImg} />
+              <img src={profileImg} alt='A picture of me, a handsome devil with a beard and a mohawk'/>
             </div>
             <div className='spotify-container'>
               <h3>Listen along to the music I code to...</h3>
@@ -131,17 +131,17 @@ export default function AboutMe() {
             <p>I really enjoy playing <span className='bold'>board games</span> and TTRPGs which involve creativity, improvisation and team communication. This has also evolved to include <span className='bold'>miniature painting</span> which has taught me the value of a planned patient approach when taking on a project as well as providing an excellent creative outlet.</p>
             <p>You can find pictures of my miniatures here: <a href='https://www.instagram.com/wee_gerblins?igsh=bDU1Mm93ZWxtb3Nh' target='_blank'><FaInstagramSquare /> wee_gerblins</a></p>
             <div className='minis-pictures'>
-              <img className='hobby-picture' src={beholder} />
-              <img className='hobby-picture' src={kobold} />
-              <img className='hobby-picture' src={phade} />
+              <img className='hobby-picture' src={beholder} alt={`A picture of a miniature beholder that I painted, it's a big scaley circle with one big eye in the center and lots of eye stalks coming off the top`}/>
+              <img className='hobby-picture' src={kobold} alt={`A picture of a kobold miniature I painted. It's got fake wings on it's back and is casting a fire ball`}/>
+              <img className='hobby-picture' src={phade} alt={`A picture of a tiefling miniature I painted. She has small horns and is holding a staff with a big eye on the top`}/>
             </div>
             <p>I love <span className='bold'>video games</span>, both on console and PC. I tend to lean towards RPGs or strategy games because I either love immersing myself in a story or getting that rewarding feeling of pulling off a complex game plan.</p>
             <p>I am a big outdoors person and have a passion for <span className='bold'>wildlife photography</span> and <span className='bold'>hiking</span>. One of my most recent expedition involved crawling through 1-2 feet of snow in the Scottish mountains to photograph mountain hare.</p>
             <p>You can find some of my wildlife photography here: <a href='https://www.instagram.com/bkellywildlife?igsh=cWZrYjBhMXg5Y2pm' target='_blank'><FaInstagramSquare /> bkellywildlife </a></p>
             <div className='photography-pictures'>
-              <img className='hobby-picture' src={redPandas} />
-              <img className='hobby-picture' src={cheetah} />
-              <img className='hobby-picture' src={osprey} />
+              <img className='hobby-picture' src={redPandas} alt={`A picture of three red pandas all huddled together in the snow`}/>
+              <img className='hobby-picture' src={cheetah} alt={`A picture of a baby cheetah, they are super cute`}/>
+              <img className='hobby-picture' src={osprey} alt={`A picture of an osprey flying overhead and looking down into the camera`}/>
             </div>
             <p>I am a big <span className='bold'>coffee</span> drinker, I bought a proper coffee machine during the 2020 lockdown and it was one of the best purchases I've made to this day!</p>
             <p>I also dabble in playing <span className='bold'>guitar</span> and am a huge <span className='bold'>metal music</span> enthusiast.</p>

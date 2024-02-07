@@ -13,7 +13,7 @@ export default function Nav() {
     <header>
       <div className='scroll-buttons'>
         <Link to='hero' offset={-150} spy={true} smooth={true} duration={500} className='scroll-link' id='home-link'>Ben Kelly</Link>
-        <Link to='hero' offset={-150} spy={true} smooth={true} duration={500} id='home-icon'><img src={logo} /></Link>
+        <Link to='hero' offset={-150} spy={true} smooth={true} duration={500} id='home-icon'><img src={logo} alt={`A picture of the sites logo (A stylised Osprey head)`}/></Link>
       </div>
       <div>
         <div className='scroll-buttons' id='nav-right'>

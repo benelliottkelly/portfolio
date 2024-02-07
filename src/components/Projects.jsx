@@ -80,7 +80,7 @@ export default function Projects() {
         {listOfProjects.map((project) => {
           return <div className={`individual-project-container ${onScreen ? 'animate-container' : ''}`} key={uuidv4()}>
               <h3>{project.name}</h3>
-              <img className='project-image' src={project.picture} />
+              <img className='project-image' src={project.picture} alt={`A gif showing the ${project.name} website`}/>
               <div className='project-links'>
                 <a href={project.projectLink} target='_blank'>Visit site</a>
                 <a href={project.readMeLink} target='_blank'>Go to ReadMe</a>
