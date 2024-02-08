@@ -8,6 +8,7 @@
   .projects-container {
     @include flex-even(row);
     flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .individual-project-container {
