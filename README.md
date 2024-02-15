@@ -44,7 +44,7 @@ After filling out the rest of the about me section basics I added the projects t
 
 Next I turned my attention to the home/landing page, I wanted this to be fairly simple with just my name and a little bit about me. I was inspired by both Ryan Mulligan’s [Tiger Uppercut](https://codepen.io/hexagoncircle/pen/bQLRXK) codepen and Carlos Córdova’s [Text Animation - N° 1](https://codepen.io/carloscdev/pen/mdBLmwP) codepen. I combined both of these ideas and using the css ‘background-clip’ put an image of my favourite animal (the osprey) as the fill for the text and then put some little headlines that describe me underneath that.
 
-![Gif showing the landing page](https://github.com/benelliottkelly/portfolio/assets/143013767/d4d24efe-4d4b-46b7-8a97-49039089e181)
+![Gif showing the landing page](https://github.com/benelliottkelly/portfolio/assets/143013767/724d846f-d435-4833-a6b8-f2ee4a019e72)
 
 I created some animations which I wanted to trigger as the viewer scrolled down to that section of the page (so that they don’t happen off screen). For this I used ‘useInView’ from react-intersection-observer. I gave each relevant section a reference which would trigger the useInView and therefore a useEffect which would then set state of a useState hook, which would in turn add an animate class to the specified element and thus triggering the animation. By using the useEffect to set a state for each element, it meant that the animation would only occur once, instead of every time you scrolled over it, which could get annoying.
 
