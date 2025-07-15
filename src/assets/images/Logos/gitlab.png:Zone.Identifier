@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/a193e421-9cf1-4e7d-8f84-680eca3cb940/gitlab_webp.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250715%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250715T150400Z&X-Amz-Expires=86400&X-Amz-Signature=1d551f32d575e2c18c7e0f8311e01259dd634c88d1e56db9f78d6303732c2308&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22gitlab_webp.png%22&response-content-type=image%2Fpng&x-id=GetObject

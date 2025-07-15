@@ -31,6 +31,23 @@ import qgisLogo from '../assets/images/Logos/qgis.png'
 import reactLogo from '../assets/images/Logos/react.png'
 import sassLogo from '../assets/images/Logos/sass.png'
 import viteLogo from '../assets/images/Logos/vite.png'
+import awsCloudwatchLogo from '../assets/images/Logos/aws_cloudwatch.png'
+import awsEC2Logo from '../assets/images/Logos/aws_ec2.png'
+import awsECSLogo from '../assets/images/Logos/aws_ecs.png'
+import awsS3Logo from '../assets/images/Logos/aws_s3.jpg'
+import awsLambdaLogo from '../assets/images/Logos/aws_lambda.png'
+import awsStepFunctionLogo from '../assets/images/Logos/aws_step_function.jpg'
+import awsDynamoDBLogo from '../assets/images/Logos/aws_dynamodb.png'
+import dockerLogo from '../assets/images/Logos/docker.png'
+import gitlabLogo from '../assets/images/Logos/gitlab.png'
+import golangLogo from '../assets/images/Logos/golang.png'
+import groovyLogo from '../assets/images/Logos/groovy.png'
+import jiraLogo from '../assets/images/Logos/jira.png'
+import splunkLogo from '../assets/images/Logos/splunk.png'
+import svelteLogo from '../assets/images/Logos/svelte.png'
+import terraformLogo from '../assets/images/Logos/terraform.png'
+import typescriptLogo from '../assets/images/Logos/typescript.png'
+import yamlLogo from '../assets/images/Logos/yaml.png'
 
 // hobbies photos
 import beholder from '../assets/images/Hobbies/beholder.jpg'
@@ -85,7 +102,7 @@ export default function AboutMe() {
           </div>
           <div className='statement-skills'>
             <div className='brand-statement'>
-              <p>As a former senior environmental consultant, I discovered my passion for software development while observing my partner code. This led to me pursuing a software engineering bootcamp at General Assembly, determined to learn the skills!</p>
+              <p>As a former senior environmental consultant, I discovered my passion for software engineering while observing my partner code. This led to me landing my first software engineering role with Adarma Security, where I greatly improved on my technical skills, learnt a host of new ones and gained valuable experience of working within the tech industry.</p>
               <p>A board games enthusiast, I find joy in problem-solving, strategy and social interaction, drawing parallels between interpreting complex game rules and coding concepts. A natural team player and mentor in previous roles, I'm eager to develop my skills further, embrace new challenges, and contribute positively to a collaborative team environment.</p>
             </div>
           </div>
@@ -97,33 +114,51 @@ export default function AboutMe() {
               <li className='single-skill' style={{ backgroundImage: `url(${htmlLogo})`, '--i': 1 }}><p className='skill-text'>HTML</p></li>
               <li className='single-skill' style={{ backgroundImage: `url(${cssLogo})`, '--i': 2 }}><p className='skill-text'>CSS</p></li>
               <li className='single-skill' style={{ backgroundImage: `url(${javascriptLogo})`, '--i': 3 }}><p className='skill-text'>JavaScript</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${sassLogo})`, '--i': 4 }}><p className='skill-text'>Sass</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${reactLogo})`, '--i': 5 }}><p className='skill-text'>React</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${bootstrapLogo})`, '--i': 6 }}><p className='skill-text'>Bootstrap</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${viteLogo})`, '--i': 7 }}><p className='skill-text'>Vite</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${pythonLogo})`, '--i': 8 }}><p className='skill-text'>Python</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${djangoLogo})`, '--i': 9 }}><p className='skill-text'>Django</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${djangoRestLogo})`, '--i': 10 }}><p className='skill-text'>Django REST Framework</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${postgresqlLogo})`, '--i': 11 }}><p className='skill-text'>PostgreSQL</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${mongodbLogo})`, '--i': 12 }}><p className='skill-text'>MongoDB</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${mongooseLogo})`, '--i': 13 }}><p className='skill-text'>Mongoose</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${expressLogo})`, '--i': 14 }}><p className='skill-text'>Express</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${nodejsLogo})`, '--i': 15 }}><p className='skill-text'>Node.js</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${jsonwebtokenLogo})`, '--i': 16 }}><p className='skill-text'>JSON Web Token</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${bcryptLogo})`, '--i': 17 }}><p className='skill-text'>bcrypt</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${githubLogo})`, '--i': 18 }}><p className='skill-text'>GitHub</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${neonLogo})`, '--i': 19 }}><p className='skill-text'>Neon</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${cloudinaryLogo})`, '--i': 20 }}><p className='skill-text'>Cloudinary</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${netlifyLogo})`, '--i': 21 }}><p className='skill-text'>Netlify</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${herokuLogo})`, '--i': 22 }}><p className='skill-text'>Heroku</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${insomniaLogo})`, '--i': 23 }}><p className='skill-text'>Insomnia</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${pipenvLogo})`, '--i': 24 }}><p className='skill-text'>Pipenv</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${axiosLogo})`, '--i': 25 }}><p className='skill-text'>Axios</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${photoshopLogo})`, '--i': 26 }}><p className='skill-text'>Photoshop</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${inkscapeLogo})`, '--i': 27 }}><p className='skill-text'>Inkscape</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${lightroomLogo})`, '--i': 28 }}><p className='skill-text'>Lightroom</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${arcgisLogo})`, '--i': 29 }}><p className='skill-text'>ArcGIS</p></li>
-              <li className='single-skill' style={{ backgroundImage: `url(${qgisLogo})`, '--i': 30 }}><p className='skill-text'>QGIS</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${typescriptLogo})`, '--i': 4 }}><p className='skill-text'>Typescript</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${sassLogo})`, '--i': 5 }}><p className='skill-text'>Sass</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${reactLogo})`, '--i': 6 }}><p className='skill-text'>React</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${svelteLogo})`, '--i': 7 }}><p className='skill-text'>Svelte</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${bootstrapLogo})`, '--i': 8 }}><p className='skill-text'>Bootstrap</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${viteLogo})`, '--i': 9 }}><p className='skill-text'>Vite</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${pythonLogo})`, '--i': 10 }}><p className='skill-text'>Python</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${golangLogo})`, '--i': 11 }}><p className='skill-text'>Go</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${yamlLogo})`, '--i': 12 }}><p className='skill-text'>YAML</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${groovyLogo})`, '--i': 13 }}><p className='skill-text'>Groovy</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${djangoLogo})`, '--i': 14 }}><p className='skill-text'>Django</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${djangoRestLogo})`, '--i': 15 }}><p className='skill-text'>Django REST Framework</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${postgresqlLogo})`, '--i': 16 }}><p className='skill-text'>PostgreSQL</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${mongodbLogo})`, '--i': 17 }}><p className='skill-text'>MongoDB</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${mongooseLogo})`, '--i': 18 }}><p className='skill-text'>Mongoose</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${expressLogo})`, '--i': 19 }}><p className='skill-text'>Express</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${nodejsLogo})`, '--i': 20 }}><p className='skill-text'>Node.js</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${jsonwebtokenLogo})`, '--i': 21 }}><p className='skill-text'>JSON Web Token</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${bcryptLogo})`, '--i': 22 }}><p className='skill-text'>bcrypt</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${githubLogo})`, '--i': 23 }}><p className='skill-text'>GitHub</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${gitlabLogo})`, '--i': 24 }}><p className='skill-text'>GitLab</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsLambdaLogo})`, '--i': 25 }}><p className='skill-text'>AWS Lambda</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsEC2Logo})`, '--i': 26 }}><p className='skill-text'>AWS EC2</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsECSLogo})`, '--i': 27 }}><p className='skill-text'>AWS ECS</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsStepFunctionLogo})`, '--i': 28 }}><p className='skill-text'>AWS Step Function</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsS3Logo})`, '--i': 29 }}><p className='skill-text'>AWS S3</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsEC2Logo})`, '--i': 30 }}><p className='skill-text'>AWS EC2</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsDynamoDBLogo})`, '--i': 31 }}><p className='skill-text'>AWS DynamoDB</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${awsCloudwatchLogo})`, '--i': 32 }}><p className='skill-text'>AWS Cloudwatch</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${dockerLogo})`, '--i': 33 }}><p className='skill-text'>Docker</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${terraformLogo})`, '--i': 34 }}><p className='skill-text'>Terraform</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${splunkLogo})`, '--i': 35 }}><p className='skill-text'>Splunk</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${jiraLogo})`, '--i': 36 }}><p className='skill-text'>Jira</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${neonLogo})`, '--i': 37 }}><p className='skill-text'>Neon</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${cloudinaryLogo})`, '--i': 38 }}><p className='skill-text'>Cloudinary</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${netlifyLogo})`, '--i': 39 }}><p className='skill-text'>Netlify</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${herokuLogo})`, '--i': 40 }}><p className='skill-text'>Heroku</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${insomniaLogo})`, '--i': 41 }}><p className='skill-text'>Insomnia</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${pipenvLogo})`, '--i': 42 }}><p className='skill-text'>Pipenv</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${axiosLogo})`, '--i': 43 }}><p className='skill-text'>Axios</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${photoshopLogo})`, '--i': 44 }}><p className='skill-text'>Photoshop</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${inkscapeLogo})`, '--i': 45 }}><p className='skill-text'>Inkscape</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${lightroomLogo})`, '--i': 46 }}><p className='skill-text'>Lightroom</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${arcgisLogo})`, '--i': 47 }}><p className='skill-text'>ArcGIS</p></li>
+              <li className='single-skill' style={{ backgroundImage: `url(${qgisLogo})`, '--i': 48 }}><p className='skill-text'>QGIS</p></li>
             </ul>
           </article>
           <div ref={aboutMeBottomRef} className={`hobbies-container ${bottomOnScreen ? 'animate-hobbies-container' : ''}`} >
